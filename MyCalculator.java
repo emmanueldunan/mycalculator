@@ -1,4 +1,4 @@
-package mycalculator;
+
 
 /**
  * Author: Kristine Elaine P. Bautista
@@ -40,10 +40,15 @@ public class MyCalculator {
 	public int nfactorial(int n){
 		int factorial = 1;
 		
-		for(int i=1;i<n;i++)
+		if(n < 0) {
+			return -1;
+		}
+		else {
+		for(int i=1;i<=n;i++)
 			factorial *= i;
 		
 		return factorial;
+		}
 	}
 	
 	// binary search in an array
